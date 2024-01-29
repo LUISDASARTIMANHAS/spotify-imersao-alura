@@ -1,0 +1,1 @@
+npx json-server --watch src/api/artists.json --port 2024
