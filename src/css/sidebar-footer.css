@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    font-family: var(--font-dm-sans);
 }
 
 sidebar {
@@ -50,7 +51,6 @@ sidebar nav ul li a {
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
 }
 
 .library {
@@ -83,7 +83,6 @@ sidebar nav ul li a {
     border: 0px;
     font-size: 14px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -127,7 +126,6 @@ sidebar nav ul li a {
 .playlist-content .text {
     padding-bottom: 14px;
     color: white;
-    font-family: "DM Sans", sans-serif;
 }
 
 .playlist-content .title {
@@ -151,7 +149,6 @@ sidebar nav ul li a {
     -o-border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -186,4 +183,45 @@ sidebar .cookies a:hover {
     margin: 8px;
     padding: 8px;
     border-radius: 20px;
+}
+
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.disclaimer-premium .text {
+    flex-shrink: 0;
+}
+
+.disclaimer-premium .premium-title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .premium-subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
