@@ -44,10 +44,10 @@ function display(data) {
 document.addEventListener("input", () => {
     const searchTerm = searchInput.value.toLowerCase();
 
-    if (searchTerm == "") {
+    if (searchTerm === '') {
         resultPlaylist.classList.add("hidden")
         resultArtist.classList.remove("hidden")
-        return;
+        return
     }
 
     getData(searchTerm)
